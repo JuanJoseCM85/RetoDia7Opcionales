@@ -2,20 +2,20 @@ class vector
 {
     constructor(n,m)
     {
-        this.vector = [];
+        this.vector1 = [];
         for(let i=0; i<n; i++){
             //insertamos n elementos en el vector
-            this.vector.push(Math.round(Math.random() * m));
+            this.vector1.push(Math.round(Math.random() * m));
     }
     }
 
     add(a)
     {
-        if( this.vector.length == a.vector.length){
-            let resultado = new vector(this.vector.length,0);
-            for (let i=0; i<this.vector.length; i++){
+        if( this.vector1.length == a.vector1.length){
+            let resultado = new vector(this.vector1.length,0);
+            for (let i=0; i<this.vector1.length; i++){
                 
-                resultado.vector[i] =  this.vector[i] + a.vector[i];
+                resultado.vector1[i] =  this.vector1[i] + a.vector1[i];
             }
             return resultado;
         }
@@ -24,19 +24,19 @@ class vector
 
     productNum(n)
     {
-        let resultado = new vector(this.vector.length,0);
-        for (let i=0; i<this.vector.length; i++){
-            resultado.vector[i] = this.vector[i] * n;
+        let resultado = new vector(this.vector1.length,0);
+        for (let i=0; i<this.vector1.length; i++){
+            resultado.vector1[i] = this.vector1[i] * n;
         }
         return resultado;
     }
 
     subs(a)
     {
-        if( this.vector.length == a.vector.length){
-            let resultado = new vector(this.vector.length,0);
-            for (let i=0; i<this.vector.length; i++){
-                resultado.vector[i] =  this.vector[i] - a.vector[i];
+        if( this.vector1.length == a.vector1.length){
+            let resultado = new vector(this.vector1.length,0);
+            for (let i=0; i<this.vector1.length; i++){
+                resultado.vector1[i] =  this.vector1[i] - a.vector1[i];
             }
             return resultado;
         }
@@ -45,10 +45,10 @@ class vector
 
     product(a)
     {
-        if( this.vector.length == a.vector.length ){
-            let resultado = new vector(this.vector.length,0);
-            for (let i=0; i<this.vector.length; i++){
-                resultado.vector[i] =  this.vector[i] * a.vector[i];
+        if( this.vector1.length == a.vector1.length ){
+            let resultado = new vector(this.vector1.length,0);
+            for (let i=0; i<this.vector1.length; i++){
+                resultado.vector1[i] =  this.vector1[i] * a.vector1[i];
             }
             return resultado;
         }
