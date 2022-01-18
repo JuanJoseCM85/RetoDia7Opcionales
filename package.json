@@ -1,0 +1,11 @@
+{
+  "name": "retosdia7-opcionales",
+  "version": "1.0.0",
+  "description": "Retos Opcionales dia 7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan José Cabrera",
+  "license": "ISC"
+}
