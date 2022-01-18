@@ -6,18 +6,19 @@ let v2 = new libreriaVector.vector(4,5);
 console.log(v1);
 console.log(v2);
 
-v1.add(v2);
+let v3 = v1.add(v2);
 
-console.log(v1);
+console.log("Sacamos el nuevo vector v3");
+console.log(v3);
 
-v1.productNum(2);
+let v4 = v1.productNum(2);
 
-console.log(v1);
+console.log(v4);
 
-v1.subs(v2);
+let v5 = v1.subs(v2);
 
-console.log(v2);
+console.log(v5);
 
-v1.product(v2);
+let v6 = v1.product(v2);
 
-console.log(v1);
+console.log(v6);

@@ -12,34 +12,47 @@ class vector
     add(a)
     {
         if( this.vector.length == a.vector.length){
+            let resultado = new vector(this.vector.length,0);
             for (let i=0; i<this.vector.length; i++){
                 
-                this.vector[i] =  this.vector[i] + a.vector[i];
+                resultado.vector[i] =  this.vector[i] + a.vector[i];
             }
+            return resultado;
         }
+        return -1;
     }
 
     productNum(n)
     {
+        let resultado = new vector(this.vector.length,0);
         for (let i=0; i<this.vector.length; i++){
-            this.vector[i] = this.vector[i] * n;
+            resultado.vector[i] = this.vector[i] * n;
         }
+        return resultado;
     }
 
     subs(a)
     {
         if( this.vector.length == a.vector.length){
-            for (let i=0; i<this.vector.length; i++)
-                this.vector[i] =  this.vector[i] - a.vector[i];
+            let resultado = new vector(this.vector.length,0);
+            for (let i=0; i<this.vector.length; i++){
+                resultado.vector[i] =  this.vector[i] - a.vector[i];
+            }
+            return resultado;
         }
+        retunr -1;
     }
 
     product(a)
     {
         if( this.vector.length == a.vector.length ){
-            for (let i=0; i<this.vector.length; i++)
-                this.vector[i] =  this.vector[i] * a.vector[i];
+            let resultado = new vector(this.vector.length,0);
+            for (let i=0; i<this.vector.length; i++){
+                resultado.vector[i] =  this.vector[i] * a.vector[i];
+            }
+            return resultado;
         }
+        return -1;
     }
 }
 
